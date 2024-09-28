@@ -34,7 +34,7 @@ const checkWin = () => {
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
             gameover.play();
             document.querySelector(".line").style.width = '20px';
-            // Corrected template literals usage
+           
             document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
         }
     });
@@ -56,14 +56,13 @@ Array.from(boxes).forEach(element => {
     });
 });
 
-// Select the reset button
 let reset = document.getElementById('reset');
 reset.addEventListener('click', () => {
     let boxtexts = document.querySelectorAll('.boxtext');
     Array.from(boxtexts).forEach(element => {
         element.innerText = "";
     });
-    turn = "X"; // Ensure consistency in case-sensitive
+    turn = "X"; 
     isgameover = false;
     document.querySelector(".line").style.width = '0px';
     document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;

@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Added for better sizing */
+    box-sizing: border-box; 
 }
 
 nav {
@@ -53,7 +53,7 @@ nav ul {
 }
 
 .gameInfo {
-    padding: 0 34px; /* Fixed spacing */
+    padding: 0 34px; 
 }
 
 .imgbox img {
@@ -84,11 +84,11 @@ nav ul {
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
-    font-weight: 400; /* Fixed font weight */
+    font-weight: 400;
 }
 
 .line {
-    background-color: purple; /* Removed duplicate background-color */
+    background-color: purple;
     width: 20vw;
     height: 3px;
     position: absolute;
