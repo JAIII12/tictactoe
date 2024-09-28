@@ -1,40 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Added for better sizing */
 }
 
-nav{
-   background-color: black;
-   color: white;
-   height: 65px;
-   font-size: 27px;
-   display: flex;
-   align-items: center;
-   padding: 0 12px;
-   font-family: "Roboto Slab", serif;
+nav {
+    background-color: black;
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: "Roboto Slab", serif;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-.gameContainer{
-    background-color: ;
+.gameContainer {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: repeat(3,10vw);
-    grid-template-rows: repeat(3,10vw);
-    font-family: "Roboto Slab", serif;   
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: "Roboto Slab", serif; 
+    position: relative;
 }
 
-.box{
+.box {
     border: 2px solid black;
     font-size: 3vw;
     cursor: pointer;
@@ -43,33 +44,53 @@ nav ul{
     align-items: center;
 }
 
-.box:hover{
-    background-color:  lavender;
+.box:hover {
+    background-color: lavender;
 }
 
-.gameInfo{
-    padding: 0 34 px;
-    }
-.imgbox img{
-        display: none;
+.info {
+    font-size: 23px;
 }
 
-.br-0{
+.gameInfo {
+    padding: 0 34px; /* Fixed spacing */
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
     border-right: 0;
 }
 
-.bl-0{
+.bl-0 {
     border-left: 0;
 }
 
-.bt-0{
+.bt-0 {
     border-top: 0;
 }
 
-.bb-0{
+.bb-0 {
     border-bottom: 0;
 }
 
-.resetButton{
-     cursor: pointer;
+#reset {
+    margin: 1px 4px;
+    padding: 3px 4px;
+    background-color: lavender;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400; /* Fixed font weight */
+}
+
+.line {
+    background-color: purple; /* Removed duplicate background-color */
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
 }
